@@ -1,0 +1,10 @@
+# Bench pendulum, steel bob on 0.2 mm wire, timed with a phone stopwatch.
+# Each run line lists total seconds for n = 20 swings, one per timing.
+
+run len=0.250 n=20 amp=5 t=20.09,20.07,20.10,20.08 label=L250
+run len=0.500 n=20 amp=5 t=28.38,28.36,28.41,28.39 label=L500
+run len=1.000 n=20 amp=10 t=40.21,40.19,40.25,40.20 label=L1000
+run len=1.500 n=20 amp=5 t=49.16,49.13,49.19,49.15 label=L1500
+
+# Peak amplitudes (degrees) of the 1.000 m pendulum, read every cycle.
+peaks len=1.000 a=10.0,9.7,9.4,9.1,8.9,8.6 label=damp-1000
